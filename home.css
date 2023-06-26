@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100vh;
+    background: rgba(0, 8, 29, 1);
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------------------------------------ Nav Bar ------------------------------------ */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 90px;
+    height: 80px;
+    width: 100%;
+
+}
+
+.logo img {
+    width: auto;
+    height: 45px;
+    /* margin-left: 100px;
+    margin-top: 40px; */
+}
+
+.select {
+    margin-right: 20px;
+    padding: 0 5px;
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #737373;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 300;
+    background: black;
+    letter-spacing: 1px;
+
+
+}
+
+.select i {
+    opacity: 500%;
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background: rgb(229, 9, 20);
+    width: 75px;
+    height: 32px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border-color: rgba(128, 128, 128, 0.7);
+    border: none;
+    font-weight: bold;
+    transition-property: background-color, border-color;
+}
+
+.btn:hover {
+    background: rgb(182, 11, 19);
+    transition: 0.5s;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------------ Poster ------------------------------------ */
+.header-content {
+    margin: 80px 130px;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.header-content h3 {
+    color: white;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.box {
+    width: 1000px;
+    height: 160px;
+    background: linear-gradient(0deg, rgba(0, 8, 29, 1), rgba(0, 8, 29, 1));
+    border-style: solid;
+    background: linear-gradient(0deg, rgba(0, 8, 29, 1), rgba(0, 8, 29, 1)) padding-box, linear-gradient(271.65deg, #233371 5.26%, #00197a 50.02%, #e50914 97.68%) border-box;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.box h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 22px;
+}
+
+.box input[type=email] {
+    border: 1px solid #737373;
+    width: 365px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    padding-left: 5px;
+    padding: 0 10px;
+    background: black;
+    border-radius: 4px;
+    min-height: 55px;
+}
+
+.box input::placeholder {
+    color: #b3b3b3;
+    font-size: 16px;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+.box .btn-1 {
+    margin-top: 5px;
+    border: none;
+    width: 200px;
+    height: 55px;
+    padding: 8px;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition-property: background-color, border-color;
+}
+
+.section {
+    background: linear-gradient(180deg, rgb(0, 8, 27) 0%, rgb(0, 12, 39));
+    overflow: hidden;
+    width: 1200px;
+    height: 1600px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+    flex-direction: row-reverse;
+}
+
+.sec1 {
+    color: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    border-bottom: 1.21165px solid #494949;
+    width: 100%;
+    height: 400px;
+}
+
+.sec1 h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-left: 80px;
+    padding-top: 100px;
+}
+
+.sec1 h3 {
+    font-size: 20px;
+    font-weight: 300px;
+    padding-top: 15px;
+    padding-left: 80px;
+}
+
+.sec1-img img {
+    width: 500px;
+    height: auto;
+    float: right;
+}
+
+.section2 {
+    border-bottom: 1.21165px solid #494949;
+    opacity: 0.2s;
+    width: 100%;
+    height: 400px;
+}
+
+.sec2 {
+    color: white;
+    float: right;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-left: 550px;
+    padding-top: 110px;
+}
+
+.sec2 h3 {
+    font-size: 23px;
+    font-weight: 300px;
+    padding-left: 550px;
+    padding-top: 10px;
+}
+
+.sec2-img img {
+    width: 500px;
+    height: auto;
+    float: left;
+}
+
+.section3 {
+    border-bottom: 1.21165px solid #494949;
+    opacity: 0.2s;
+    width: 100%;
+    height: 400px;
+}
+
+.section4 {
+    opacity: 0.2s;
+    width: 100%;
+    height: 400px;
+}
+
+/* ------------------------------------ Frequently Ask Quetion ------------------------------------ */
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-left: 1px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 15px;
+
+}
+
+.accordion {
+    margin: 10px 8px;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordion li {
+    list-style: none;
+    width: 140%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 28px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(19, 33, 68, 1);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 80px;
+    font-weight: 200;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: rgba(19, 33, 68, 1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .sml {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 1.875rem;
+    float: left;
+    margin-left: 20px;
+}
+
+.email-signup {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.email-signup input[type=email] {
+    border: 1px solid #737373;
+    width: 365px;
+    height: 50px;
+    margin-left: 5px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 5px;
+    padding: 0 10px;
+    background: black;
+    border-radius: 4px;
+}
+
+.email-signup input[type=email]::placeholder {
+    color: #b3b3b3;
+    font-size: 16px;
+    padding-left: 8px;
+    font-weight: 200;
+}
+
+.email-signup .btn-1 {
+    margin-left: 10px;
+    margin-top: 5px;
+    border: none;
+    width: 200px;
+    height: 52px;
+    padding: 8px;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition-property: background-color, border-color;
+}
+
+.btn-1:hover {
+    background: rgb(182, 11, 19);
+    transition: 0.5s;
+}
+
+/* ------------------------------------ Footer ------------------------------------ */
+.footer {
+    background: rgba(0, 8, 29, 1);
+    margin-top: 150px;
+    width: 100%;
+    height: 60vh;
+    color: white;
+}
+
+.footer h4 {
+    font-size: 0.950rem;
+    font-weight: 500;
+    padding-left: 180px;
+    padding-top: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.link {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-1 ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.link-1 ul li {
+    padding-left: 33px;
+    padding-top: 10px;
+}
+
+.link-1 ul li a {
+    font-size: 0.950rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.last-btn {
+    margin-left: 180px;
+    width: 130px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #737373;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.last-btn i {
+    opacity: 500%;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+
+}
